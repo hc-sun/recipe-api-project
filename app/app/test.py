@@ -1,4 +1,4 @@
-from django.test import SimpleTestCase
+from django.test import SimpleTestCase # noqa
 
 
 # from app import my_test_module #module to test
