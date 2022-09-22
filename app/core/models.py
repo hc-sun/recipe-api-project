@@ -43,6 +43,7 @@ class Recipe(models.Model):
         max_digits=5,
         decimal_places=2
     )
+    detail_text = models.TextField(blank=True)
 
     def __str__(self):
         return self.recipe_name

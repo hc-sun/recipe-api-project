@@ -39,10 +39,14 @@ class ModelTests(TestCase):
         self.assertTrue(user.is_staff)
 
     def test_create_recipe(self):
-        user = get_user_model().objects.create_user('test@example.com', 'mypassword')
+        user = get_user_model().objects.create_user(
+            'test@example.com',
+            'mypassword'
+        )
         recipe = models.Recipe.objects.create(
             user=user,
             recipe_name='Test Recipe',
             price=Decimal(6.6),
+            detail_text = 'Test Text',
         )
         self.assertEqual(str(recipe), recipe.recipe_name)
