@@ -47,6 +47,6 @@ class ModelTests(TestCase):
             user=user,
             recipe_name='Test Recipe',
             price=Decimal(6.6),
-            detail_text = 'Test Text',
+            detail_text='Test Text',
         )
         self.assertEqual(str(recipe), recipe.recipe_name)

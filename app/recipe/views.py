@@ -10,7 +10,7 @@ class RecipeViewSet(viewsets.ModelViewSet):
     Get TOKEN RESPONSE in /api/user/token/.
     Input "Token TOKEN RESPONSE" in tokenAuth,  
     Get recipe in /api/recipe/recipes/.
-    '''   
+    '''
     # serializer_class = serializers.RecipeSerializer
     serializer_class = serializers.RecipeDetailSerializer
     queryset = Recipe.objects.all()
