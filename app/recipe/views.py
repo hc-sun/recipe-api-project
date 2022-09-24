@@ -7,9 +7,9 @@ from recipe import serializers
 
 class RecipeViewSet(viewsets.ModelViewSet):
     '''
-    Get TOKEN RESPONSE in /api/user/token/.
-    Input "Token TOKEN RESPONSE" in tokenAuth,  
-    Get recipe in /api/recipe/recipes/.
+    To authenticate:
+    receive TOKEN RESPONSE in /api/user/token/
+    authorize "Token TOKEN RESPONSE" in tokenAuth
     '''
     # serializer_class = serializers.RecipeSerializer
     serializer_class = serializers.RecipeDetailSerializer
