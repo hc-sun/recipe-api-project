@@ -1,6 +1,8 @@
 FROM python:3.9-alpine3.13
 LABEL maintainer="hcsun"
+
 ENV PYTHONUNBUFFERED 1
+COPY ./default.conf.tpl /etc/nginx/default.conf.tpl
 COPY ./requirements.txt /tmp/requirements.txt
 COPY ./requirements.dev.txt /tmp/requirements.dev.txt
 COPY ./scripts /scripts
