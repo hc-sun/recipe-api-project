@@ -35,6 +35,11 @@ ALLOWED_HOSTS = [
 # ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS", "").split(",")
 # ALLOWED_HOSTS = [] if not any(ALLOWED_HOSTS) else ALLOWED_HOSTS
 
+
+# CSRF_TRUSTED_ORIGINS = [
+#     'https://subdomain.example.com'
+# ]
+
 # Application definition
 
 INSTALLED_APPS = [
